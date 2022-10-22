@@ -1,0 +1,3 @@
+# Firefox DevTool Notes
+
+> Check back later...
