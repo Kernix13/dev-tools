@@ -2,7 +2,24 @@
 
 Notes from various videos combined into sections for each Tab. As a result, I will have repeats until I go back and edit each section.
 
-## MISCELLANEOUS
+<div id="back-to-top"></div>
+
+## Table of Contents
+
+1. [GENERAL NOTES](#general-notes)
+1. [ELEMENTS TAB](#elements-tab)
+   1. [STYLES Pane](#styles-pane)
+1. [CONSOLE TAB](#console-tab)
+1. [PERFORMANCE TAB](#performance-tab)
+1. [SOURCES TAB](#sources-tab)
+1. [NETWORK TAB](#network-tab)
+1. [APPLICATION TAB](#application-tab)
+1. [TIMELINE TAB](#timeline-tab)
+1. [SECURITY TAB](#security-tab)
+1. [MEMORY TAB](#security-tab)
+1. [LIGHTHOUSE TAB](#lighthouse-tab)
+
+## GENERAL NOTES
 
 Main tabs:
 
@@ -44,6 +61,8 @@ Top Gear icon options/settings:
 | Locations    | Shortcuts    | -            |
 
 - `user agent stylesheet` - these are styles added by the web browser. The best way to override them is to put your own styles on those elements.
+
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
 
 ## ELEMENTS TAB
 
@@ -97,7 +116,9 @@ padding: 20px 20px 5px;
 1. Go to the Sources tab and click the Play/Record btn and that’s how you find the unused classes
 2. Note, click on a stylesheet name first
 
-### STYLES pane and subtabs
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
+
+### STYLES Pane
 
 - You can toggle the styles by clicking the checkbox for any style - but it will turn off that class for all elements using it - that helps finding why a rule is not taking effect on the page
 - To turn off a class for a specific element, select the element, then click `.cls` for class and you can toggle any of that item's classes
@@ -113,6 +134,8 @@ padding: 20px 20px 5px;
 - You can filter for CSS props like `color` that are on the selected element
 - Select an element then go to the Styles pane - at the top you will see `element.style {}`- you can enter styles for that element there
 - If you see a CSS rule with strikethrough, then it is being overridden by a more specific rule - so use to remove useless css
+
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
 
 ## CONSOLE TAB
 
@@ -151,6 +174,8 @@ function greaterThan(x, y) {
 }
 ```
 
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
+
 ## PERFORMANCE TAB
 
 - Different from Lighthouse?
@@ -185,6 +210,8 @@ function greaterThan(x, y) {
 - You can edit your code in this tab – click `Page` next to snippets or to the left of `>>` collapse any file listings > right-click in the empty field directly below > or click one of the file names to see the source code
 - Right-click > add folder to workspace > select the folder that your source files are in > can make changes to your files and save them – WHY?
 
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
+
 ## NETWORK TAB
 
 - Network Tab: has a list of all the files for the page
@@ -209,16 +236,7 @@ function greaterThan(x, y) {
 - The more files and the more code you have, the longer the load time
 - Reload your page while on that tab to see the load time
 
-## AUDITS TAB (Now Lighthouse tab)
-
-- takes a picture of the page when it runs -
-- it then shows areas for improvement -
-- just because a suggestion is there doesn't mean you have to do it
-- Remove unused CSS - compare to the command `showCoverage`
-- Lighthouse: it’s not called Audits but Lighthouse now – gives ratings based on the performance of the website, gives suggestions to make it perform better
-- You also need to take into account the server you are on – so is it a shared hosting acct or other – he chose everything except Progressive Web App
-- Click `Run Audit` – shows page spped, first contentful paint, performance, accessibility, best practices, SEO, time to interactive, total blocking time
-- It shows Opportunities to make improvements, Diagnostics, Passed Audits, ARIA,
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
 
 ## APPLICATION TAB
 
@@ -234,7 +252,11 @@ function greaterThan(x, y) {
 - `Cookies` – you can track cookies – to create a cookie, go into your JS file, use `document.cookie = "username=Jim Kernix";` - it won’t have an `Expires/Max-Age` set so it ends when the session end but you can set an expiration – you can clear it out the same way as for session or local storage
 - Click on the `Storage` text in the left pane and click the `Clear site data` button to clear everything that is checked below
 
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
+
 ## TIMELINE TAB
+
+> There is no Timeline tab. I think these notes should be listed as a pane under another tab, maybe Performance.
 
 - Use when you have performance issues - it records the performance and you can then look at the details -
 - click the record btn > then refresh the page > wait then click Stop
@@ -259,7 +281,9 @@ function greaterThan(x, y) {
 - it will help you with _memory leaks_
 - you can choose Summary, Containment, and Statistics views
 
-> way too much information!!!
+> ...way too much information!!!
+
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
 
 ## LIGHTHOUSE TAB
 
@@ -267,3 +291,16 @@ function greaterThan(x, y) {
 - **_NOTE_**: You can check `localhost` sites!
 - Make sure to run the report in incognito mode to remove influences from cached files
 - This is a huge topic and you have to go thru each error/suggestion one-by-one to try and fix/improve them
+
+> The notes below here were under the category AUDITS TAB but that is from an older video and I believe these should be under LIGHTHOUSE
+
+- takes a picture of the page when it runs -
+- it then shows areas for improvement -
+- just because a suggestion is there doesn't mean you have to do it
+- Remove unused CSS - compare to the command `showCoverage`
+- Lighthouse: it’s not called Audits but Lighthouse now – gives ratings based on the performance of the website, gives suggestions to make it perform better
+- You also need to take into account the server you are on – so is it a shared hosting acct or other – he chose everything except Progressive Web App
+- Click `Run Audit` – shows page spped, first contentful paint, performance, accessibility, best practices, SEO, time to interactive, total blocking time
+- It shows Opportunities to make improvements, Diagnostics, Passed Audits, ARIA,
+
+<div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
