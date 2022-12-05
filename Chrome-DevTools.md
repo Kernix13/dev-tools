@@ -12,6 +12,7 @@ Notes from various videos combined into sections for each Tab. As a result, I wi
 1. [CONSOLE TAB](#console-tab)
 1. [PERFORMANCE TAB](#performance-tab)
 1. [SOURCES TAB](#sources-tab)
+   1. [COVERAGE](#coverage)
 1. [NETWORK TAB](#network-tab)
 1. [APPLICATION TAB](#application-tab)
 1. [TIMELINE TAB](#timeline-tab)
@@ -87,7 +88,10 @@ Top Gear icon options/settings:
 ```html
 <div id="top">
   <h1>Stunning free images &amp; royalty free stock</h1>
-  <h2>Over 2.7 million+ high quality stock images, videos and music shared by our talented community.</h2>
+  <h2>
+    Over 2.7 million+ high quality stock images, videos and music shared by our
+    talented community.
+  </h2>
 </div>
 ```
 
@@ -170,7 +174,7 @@ padding: 20px 20px 5px;
 
 ```js
 function greaterThan(x, y) {
-  console.assert(x > y, { message: "x is not greater than y" });
+  console.assert(x > y, { message: 'x is not greater than y' });
 }
 ```
 
@@ -209,6 +213,17 @@ function greaterThan(x, y) {
 - To run it click the name to the right, right-click and select run – didn’t execute for me but why use this? Oh it did run but not in the console on that tab
 - You can edit your code in this tab – click `Page` next to snippets or to the left of `>>` collapse any file listings > right-click in the empty field directly below > or click one of the file names to see the source code
 - Right-click > add folder to workspace > select the folder that your source files are in > can make changes to your files and save them – WHY?
+
+### COVERAGE
+
+- Go to Sources > More Tools dots > Coverage - the pane will show up at the bottom
+- Click the Record or Reload buttone - your files will show - click on one and it will show the files content at the top
+- There will be either a red or green border-left for the contents in the file - Green means it is being used, red means it is not being used
+- You can use UnCSS with PostCSS and Parcel
+
+> Purging that code out would be good but how do you handle things like media queries, hover states, and Font Awesome CSS rules for FA icons that appear based on different conditions like weather icons in a weather app?
+
+- **NOTE**: Media queries are not removed
 
 <div align="right">&#8673; <a href="#back-to-top" title="Table of Contents">Back to Top</a></div>
 
